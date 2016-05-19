@@ -1,0 +1,31 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+        android:defaultValue=""
+        android:key="Youremail"
+        android:summary="Enter your name here"
+        android:title="Your E-mail"
+        android:inputType="textEmailAddress"
+        android:capitalize="words"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true" />
+
+    <EditTextPreference
+        android:defaultValue=""
+        android:key="pass"
+        android:summary="pass word here"
+        android:title="Password"
+        android:inputType="textPassword"
+        android:capitalize="words"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"/>
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+
+
+</PreferenceScreen>

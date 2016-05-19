@@ -1,0 +1,33 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <ListPreference
+        android:title="Action"
+        android:summary="Select the kind of data that you would like to download"
+        android:key="action"
+        android:defaultValue="phone"
+        android:entries="@array/action_name"
+        android:entryValues="@array/action_value"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+      />
+
+    <!-- This preference simply launches an intent when selected. Use this UI sparingly, per
+         design guidelines. -->
+
+    <ListPreference
+        android:title="Keyword language"
+        android:summary="Set language for keyword"
+        android:key="lang"
+        android:defaultValue="th-TH"
+        android:entries="@array/lang_name"
+        android:entryValues="@array/lang_value" />
+    <EditTextPreference
+        android:title="Keyword"
+        android:summary="The word for call fast action"
+        android:key="keyword"
+        android:defaultValue="help me"/>
+
+</PreferenceScreen>

@@ -1,0 +1,47 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- A 'parent' preference, which enables/disables child preferences (below)
+         when checked/unchecked. -->
+
+
+    <!-- Allows the user to choose a ringtone in the 'notification' category. -->
+    <!-- NOTE: This preference will be enabled only when the checkbox above is checked. -->
+    <!-- NOTE: RingtonePreference's summary should be set to its value by the activity code. -->
+
+
+    <!-- NOTE: This preference will be enabled only when the checkbox above is checked. -->
+
+    <EditTextPreference
+        android:defaultValue=""
+        android:key="phone"
+        android:title="Phone number"
+        android:summary="Enter your friend's phone number here"
+        android:inputType="phone"/>
+    <EditTextPreference
+        android:defaultValue=""
+        android:key="sms"
+        android:title="message body"
+        android:summary="Message for send to your friend"
+        android:inputType="text"/>
+    <EditTextPreference
+        android:defaultValue=""
+        android:key="destEmail"
+        android:summary="Enter your  friend's e-mail here"
+        android:title="friend's E-mail"
+        android:inputType="textEmailAddress"/>
+    <EditTextPreference
+        android:defaultValue="ask for help"
+        android:key="emailSubject"
+        android:summary="E-mail's Subject"
+        android:title="Subject"/>
+    <EditTextPreference
+        android:key="emailBody"
+        android:title="E-mail body"
+        android:summary="Descript in e-mail"
+        android:defaultValue="Help me please!!"/>
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="sendGPS"
+        android:summary="Check this if you want to attach your location"
+        android:title="attach GPS" />
+</PreferenceScreen>

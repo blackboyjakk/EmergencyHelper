@@ -1,0 +1,44 @@
+<resources>
+
+    <string-array name="color_names">
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Yellow</item>
+        <item>Orange</item>
+        <item>Pink</item>
+    </string-array>
+    <string-array name="color_values">
+        <item>RED</item>
+        <item>GRN</item>
+        <item>BLU</item>
+        <item>YLW</item>
+        <item>ORG</item>
+        <item>PNK</item>
+    </string-array>
+    <string-array name="action_name">
+        <item>Phoning</item>
+        <item>Send message</item>
+        <item>Send mail</item>
+        <item>Record sound</item>
+        <item>Capture photo</item>
+        <item>Record video</item>
+    </string-array>
+    <string-array name="action_value">
+        <item>phone</item>
+        <item>message</item>
+        <item>mail</item>
+        <item>sound</item>
+        <item>photo</item>
+        <item>video</item>
+    </string-array>
+    <string-array name="lang_name">
+        <item>English</item>
+        <item>Thai</item>
+    </string-array>
+    <string-array name="lang_value">
+        <item>en-US</item>
+        <item>th-TH</item>
+    </string-array>
+
+</resources>

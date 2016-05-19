@@ -1,0 +1,73 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceScreen
+        android:key="AccountLogin"
+        android:title="Account Login" >
+        <EditTextPreference
+            android:defaultValue=""
+            android:key="Youremail"
+            android:summary="Enter your name here"
+            android:title="Your E-mail"
+            android:inputType="textEmailAddress"/>
+        <EditTextPreference
+            android:defaultValue=""
+            android:key="pass"
+            android:summary="pass word here"
+            android:title="Password"
+            android:inputType="textPassword"/>
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="SettingDestination"
+        android:title="Setting destination">
+        <EditTextPreference
+            android:defaultValue=""
+            android:key="phone"
+            android:title="Phone number"
+            android:summary="Enter your friend's phone number here"
+            android:inputType="phone"/>
+        <EditTextPreference
+            android:defaultValue=""
+            android:key="destEmail"
+            android:summary="Enter your  friend's e-mail here"
+            android:title="friend's E-mail"
+            android:inputType="textEmailAddress"/>
+        <EditTextPreference
+            android:defaultValue="ask for help"
+            android:key="emailSubject"
+            android:summary="E-mail's Subject"
+            android:title="Subject"/>
+        <EditTextPreference
+            android:key="emailBody"
+            android:title="E-mail body"
+            android:summary="Descript in e-mail"
+            android:defaultValue="Help me please!!"/>
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="sendGPS"
+            android:summary="Check this if you want to attach your location"
+            android:title="attach GPS" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="FastAction"
+        android:title="Fast action">
+        <ListPreference
+            android:title="Action"
+            android:summary="Select the kind of data that you would like to download"
+            android:key="action"
+            android:defaultValue="phone"
+            android:entries="@array/action_name"
+            android:entryValues="@array/action_value" />
+        <ListPreference
+            android:title="Keyword language"
+            android:summary="Set language for keyword"
+            android:key="lang"
+            android:defaultValue="th-TH"
+            android:entries="@array/lang_name"
+            android:entryValues="@array/lang_value" />
+        <EditTextPreference
+            android:title="Keyword"
+            android:summary="The word for call fast action"
+            android:key="keyword"
+            android:defaultValue="help me"/>
+    </PreferenceScreen>
+</PreferenceScreen>
